@@ -1,5 +1,7 @@
 # Yilzi Portfolio Website
 
+![Portfolio Preview](public/readme.jpg)
+
 A modern, full-stack developer portfolio built with Next.js, React, TypeScript, and Tailwind CSS.
 
 ## Features
