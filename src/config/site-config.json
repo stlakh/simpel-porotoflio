@@ -1,38 +1,38 @@
 {
   "personal": {
-    "name": "Yilzi",
-    "title": "Full Stack Developer",
-    "bio": "Crafting elegant solutions to complex problems. Passionate about building web experiences that blend thoughtful design with robust engineering.",
-    "email": "yilzi@owner.com",
-    "phone": "+62-813-5912-3789",
-    "location": "Malang, East Java, Indonesia",
-    "tagline": "Developer, Designer, Problem Solver",
+    "name": "Aphrodite",
+    "title": "Made by Hate",
+    "bio": "Hi, my name is Radit or often called Aphrodite, I am 17 years old. You can visit my telegram channel to see all my projects.",
+    "email": "Radit4revenge@owner.com",
+    "phone": "+62-877-1626-4746",
+    "location": "Jogjakarta, Indonesia",
+    "tagline": "Developer, Designer",
     "avatar": "/images/profile.jpg"
   },
   "socialMedia": {
     "instagram": {
       "username": "Yilzi_dominan",
-      "url": "https://instagram.com/Yilzi_dominan",
+      "url": "https://www.instagram.com/rd1tx7",
       "icon": "Instagram"
     },
     "tiktok": {
-      "username": "Yilziii",
-      "url": "https://tiktok.com/@Yilziii",
+      "username": "aphrodite4revenge",
+      "url": "https://tiktok.com/@aphrodite4revenge",
       "icon": "Music"
     },
     "telegram": {
-      "username": "Yilziii",
-      "url": "https://t.me/Yilziii",
+      "username": "Aphrodite",
+      "url": "https://t.me/Aphroditedotcom",
       "icon": "Send"
     },
     "whatsapp": {
-      "phone": "6281359123789",
-      "url": "https://wa.me/6281359123789",
+      "phone": "6287716264746",
+      "url": "https://wa.me/6287716264746",
       "icon": "MessageCircle"
     },
     "github": {
-      "username": "YilziiHCT",
-      "url": "https://github.com/YilziiHCT",
+      "username": "Aphroditegthb",
+      "url": "https://github.com/Aphroditeforrevenge",
       "icon": "Github"
     }
   },
