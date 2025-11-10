@@ -1,27 +1,11 @@
-/*
-====================================================
- 🚀 Project : Yilzi-starterpack-next.js
- 👨‍💻 Author  : Yilzi  
- 📩 Kontak   : Telegram @Yilziii  
- 🌐 GitHub   : YilziiHCT  
+'use client'
 
- ⚠️ Lisensi :
-   - Script ini GRATIS untuk digunakan & dimodifikasi.
-   - ❌ Dilarang keras untuk dijual kembali (resell) atau dipublikasikan ulang sebagai produk berbayar.
-   - Script hanya untuk pembelajaran, portofolio, dan pengembangan pribadi.
+import * as AspectRatioPrimitive from '@radix-ui/react-aspect-ratio'
 
- ✅ Prinsip:
-   - Code harus efisien, clean, scalable, dan terbaca (readable).
-   - Struktur wajib mengikuti standar senior developer.
-   - Jangan membuat code berulang atau tidak berguna.
+function AspectRatio({
+  ...props
+}: React.ComponentProps<typeof AspectRatioPrimitive.Root>) {
+  return <AspectRatioPrimitive.Root data-slot="aspect-ratio" {...props} />
+}
 
- © 2025 — Crafted with ❤️ by Yilzi
-====================================================
-*/
-'use client';
-
-import * as AspectRatioPrimitive from '@radix-ui/react-aspect-ratio';
-
-const AspectRatio = AspectRatioPrimitive.Root;
-
-export { AspectRatio };
+export { AspectRatio }

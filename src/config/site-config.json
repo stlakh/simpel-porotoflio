@@ -1,0 +1,159 @@
+{
+  "personal": {
+    "name": "Yilzi",
+    "title": "Full Stack Developer",
+    "bio": "Crafting elegant solutions to complex problems. Passionate about building web experiences that blend thoughtful design with robust engineering.",
+    "email": "yilzi@owner.com",
+    "phone": "+62-813-5912-3789",
+    "location": "Malang, East Java, Indonesia",
+    "tagline": "Developer, Designer, Problem Solver",
+    "avatar": "/images/profile.jpg"
+  },
+  "socialMedia": {
+    "instagram": {
+      "username": "Yilzi_dominan",
+      "url": "https://instagram.com/Yilzi_dominan",
+      "icon": "Instagram"
+    },
+    "tiktok": {
+      "username": "Yilziii",
+      "url": "https://tiktok.com/@Yilziii",
+      "icon": "Music"
+    },
+    "telegram": {
+      "username": "Yilziii",
+      "url": "https://t.me/Yilziii",
+      "icon": "Send"
+    },
+    "whatsapp": {
+      "phone": "6281359123789",
+      "url": "https://wa.me/6281359123789",
+      "icon": "MessageCircle"
+    },
+    "github": {
+      "username": "YilziiHCT",
+      "url": "https://github.com/YilziiHCT",
+      "icon": "Github"
+    }
+  },
+  "techStack": [
+    {
+      "name": "React",
+      "category": "Frontend",
+      "level": "Expert",
+      "icon": "⚛️"
+    },
+    {
+      "name": "Next.js",
+      "category": "Frontend",
+      "level": "Expert",
+      "icon": "▲"
+    },
+    {
+      "name": "TypeScript",
+      "category": "Language",
+      "level": "Advanced",
+      "icon": "🔷"
+    },
+    {
+      "name": "Tailwind CSS",
+      "category": "Styling",
+      "level": "Expert",
+      "icon": "🎨"
+    },
+    {
+      "name": "Node.js",
+      "category": "Backend",
+      "level": "Advanced",
+      "icon": "🟢"
+    },
+    {
+      "name": "PostgreSQL",
+      "category": "Database",
+      "level": "Advanced",
+      "icon": "🐘"
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "E-Commerce Platform",
+      "description": "A modern e-commerce platform with real-time inventory management and payment integration",
+      "shortDescription": "Full-stack e-commerce with real-time updates",
+      "image": "/images/projects/project.jpg",
+      "technologies": ["React", "Node.js", "PostgreSQL", "Stripe"],
+      "demo": "https://example.com",
+      "github": "https://github.com/YilziiHCT",
+      "featured": true
+    },
+    {
+      "id": 2,
+      "title": "Task Management App",
+      "description": "Collaborative task management tool with real-time synchronization",
+      "shortDescription": "Collaborative task management solution",
+      "image": "/images/projects/project.jpg",
+      "technologies": ["Next.js", "TypeScript", "Supabase"],
+      "demo": "https://example.com",
+      "github": "https://github.com/YilziiHCT",
+      "featured": true
+    },
+    {
+      "id": 3,
+      "title": "Design System",
+      "description": "Comprehensive design system and component library",
+      "shortDescription": "Scalable component library",
+      "image": "/images/projects/project.jpg",
+      "technologies": ["React", "Storybook", "TypeScript"],
+      "demo": "https://example.com",
+      "github": "https://github.com/YilziiHCT",
+      "featured": false
+    }
+  ],
+  "content": {
+    "en": {
+      "nav": {
+        "home": "Home",
+        "projects": "Projects",
+        "contact": "Contact",
+        "location": "Location",
+        "social": "Social"
+      },
+      "hero": {
+        "greeting": "Hello, I'm Yilzi",
+        "tagline": "Full Stack Developer & Creative Problem Solver",
+        "cta": "Let's Work Together"
+      },
+      "about": {
+        "title": "About Me",
+        "description": "I'm a passionate developer from Malang with 5+ years of experience building web applications. I specialize in creating scalable, user-friendly solutions that solve real problems."
+      },
+      "footer": "© 2025 Yilzi. All rights reserved."
+    },
+    "id": {
+      "nav": {
+        "home": "Beranda",
+        "projects": "Proyek",
+        "contact": "Kontak",
+        "location": "Lokasi",
+        "social": "Sosial"
+      },
+      "hero": {
+        "greeting": "Halo, Saya Yilzi",
+        "tagline": "Developer Full Stack & Problem Solver Kreatif",
+        "cta": "Mari Berkolaborasi"
+      },
+      "about": {
+        "title": "Tentang Saya",
+        "description": "Saya adalah developer bersemangat dari Malang dengan pengalaman 5+ tahun membangun aplikasi web. Saya spesialis menciptakan solusi yang scalable dan user-friendly."
+      },
+      "footer": "© 2025 Yilzi. Semua hak dilindungi."
+    }
+  },
+  "theme": {
+    "primaryColor": "#2563eb",
+    "secondaryColor": "#1e40af",
+    "accentColor": "#3b82f6",
+    "darkBg": "#0f1419",
+    "lightBg": "#ffffff"
+  }
+}

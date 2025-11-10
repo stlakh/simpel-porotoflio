@@ -1,62 +1,68 @@
-/*
-====================================================
- 🚀 Project : Yilzi-starterpack-next.js
- 👨‍💻 Author  : Yilzi  
- 📩 Kontak   : Telegram @Yilziii  
- 🌐 GitHub   : YilziiHCT  
+import type React from "react"
+import type { Metadata } from "next"
+import { Inter, JetBrains_Mono } from "next/font/google"
+import { Analytics } from "@vercel/analytics/next"
+import "./globals.css"
+import { ThemeProvider } from "@/components/theme-provider"
+import { LanguageProvider } from "@/contexts/language-context"
 
- ⚠️ Lisensi :
-   - Script ini GRATIS untuk digunakan & dimodifikasi.
-   - ❌ Dilarang keras untuk dijual kembali (resell) atau dipublikasikan ulang sebagai produk berbayar.
-   - Script hanya untuk pembelajaran, portofolio, dan pengembangan pribadi.
+const inter = Inter({ 
+  subsets: ["latin"],
+  variable: "--font-inter"
+})
 
- ✅ Prinsip:
-   - Code harus efisien, clean, scalable, dan terbaca (readable).
-   - Struktur wajib mengikuti standar senior developer.
-   - Jangan membuat code berulang atau tidak berguna.
-
- © 2025 — Crafted with ❤️ by Yilzi
-====================================================
-*/
-
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import './globals.css'
-import YilziNavbar from '@/components/yilziNavbar'
-import YilziFooter from '@/components/yilziFooter'
-
-const inter = Inter({ subsets: ['latin'] })
+const jetbrainsMono = JetBrains_Mono({ 
+  subsets: ["latin"],
+  variable: "--font-mono"
+})
 
 export const metadata: Metadata = {
-  title: 'Yilzi - Modern Web Developer',
-  description: 'Membangun Website Kreatif & Efisien dengan Next.js, TypeScript, dan Tailwind CSS',
-  keywords: ['Yilzi', 'Web Developer', 'Next.js', 'TypeScript', 'Portfolio'],
-  authors: [{ name: 'Yilzi', url: 'https://github.com/YilziiHCT' }],
-  creator: 'Yilzi',
+  title: "Yilzi - Full Stack Developer Portfolio",
+  description:
+    "Full Stack Developer from Malang, Indonesia. Specialized in building modern web applications with React, Next.js, and TypeScript.",
+  generator: "v0.app",
+  keywords: ["developer", "portfolio", "next.js", "react", "malang"],
+  authors: [{ name: "Yilzi" }],
   openGraph: {
-    type: 'website',
-    locale: 'id_ID',
-    title: 'Yilzi - Modern Web Developer',
-    description: 'Membangun Website Kreatif & Efisien',
-    siteName: 'Yilzi Portfolio'
-  }
+    type: "website",
+    locale: "en_US",
+    url: "https://yilzi.dev",
+    title: "Yilzi - Full Stack Developer",
+    description: "Full Stack Developer specializing in modern web applications",
+    images: [
+      {
+        url: "https://example.com/og-image.jpg",
+        width: 1200,
+        height: 630,
+      },
+    ],
+  },
+  icons: {
+    icon: [
+      {
+        url: "/icon-light-32x32.png",
+        media: "(prefers-color-scheme: light)",
+      },
+      {
+        url: "/icon-dark-32x32.png",
+        media: "(prefers-color-scheme: dark)",
+      },
+    ],
+  },
 }
 
 export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode
-}) {
+}>) {
   return (
-    <html lang="id" suppressHydrationWarning>
-      <body className={inter.className}>
-        <div className="min-h-screen flex flex-col">
-          <YilziNavbar />
-          <main className="flex-grow">
-            {children}
-          </main>
-          <YilziFooter />
-        </div>
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${inter.className} ${jetbrainsMono.variable} font-sans antialiased bg-background text-foreground`}>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+          <LanguageProvider>{children}</LanguageProvider>
+        </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   )

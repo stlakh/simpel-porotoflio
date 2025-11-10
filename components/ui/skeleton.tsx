@@ -1,35 +1,13 @@
-/*
-====================================================
- 🚀 Project : Yilzi-starterpack-next.js
- 👨‍💻 Author  : Yilzi  
- 📩 Kontak   : Telegram @Yilziii  
- 🌐 GitHub   : YilziiHCT  
+import { cn } from '@/lib/utils'
 
- ⚠️ Lisensi :
-   - Script ini GRATIS untuk digunakan & dimodifikasi.
-   - ❌ Dilarang keras untuk dijual kembali (resell) atau dipublikasikan ulang sebagai produk berbayar.
-   - Script hanya untuk pembelajaran, portofolio, dan pengembangan pribadi.
-
- ✅ Prinsip:
-   - Code harus efisien, clean, scalable, dan terbaca (readable).
-   - Struktur wajib mengikuti standar senior developer.
-   - Jangan membuat code berulang atau tidak berguna.
-
- © 2025 — Crafted with ❤️ by Yilzi
-====================================================
-*/
-import { cn } from '@/lib/utils';
-
-function Skeleton({
-  className,
-  ...props
-}: React.HTMLAttributes<HTMLDivElement>) {
+function Skeleton({ className, ...props }: React.ComponentProps<'div'>) {
   return (
     <div
-      className={cn('animate-pulse rounded-md bg-muted', className)}
+      data-slot="skeleton"
+      className={cn('bg-accent animate-pulse rounded-md', className)}
       {...props}
     />
-  );
+  )
 }
 
-export { Skeleton };
+export { Skeleton }

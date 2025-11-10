@@ -1,210 +1,224 @@
-# Yilzi-starterpack-next.js
+# Yilzi Portfolio Website
 
-🚀 **Template Website Portofolio Modern** - Dibuat dengan Next.js 14, TypeScript, dan Tailwind CSS
+A modern, full-stack developer portfolio built with Next.js, React, TypeScript, and Tailwind CSS.
 
----
+## Features
 
-## 📋 Deskripsi
+- 🌙 **Dark/Light Mode Toggle** - Seamless theme switching with proper hydration handling
+- 🌍 **Multi-language Support** - English and Indonesian translations
+- 📱 **Fully Responsive** - Works perfectly on all devices
+- ✨ **Smooth Animations** - Beautiful transitions and micro-interactions
+- 🎨 **Modern Design** - Professional aesthetic with glassmorphism effects
+- ⚡ **Performance Optimized** - Fast loading times and smooth interactions
+- 🔍 **SEO Friendly** - Optimized for search engines
+- 🎯 **Accessible** - WCAG compliant with proper semantic HTML
 
-**Yilzi-starterpack-next.js** adalah template website portofolio yang dirancang khusus untuk developer, designer, atau siapa saja yang ingin memiliki portofolio online yang modern, responsif, dan profesional.
+## Tech Stack
 
-### ✨ Fitur Utama:
-- ⚡ **Next.js 14** dengan App Router
-- 🔷 **TypeScript** untuk type safety
-- 🎨 **Tailwind CSS** untuk styling yang efisien
-- 📱 **Fully Responsive** - Mobile, Tablet, Desktop
-- 🌙 **Clean & Modern Design**
-- 🚀 **Fast Performance**
-- 📄 **4 Halaman Utama**: Home, About, Projects, Contact
-- 🎯 **SEO Optimized**
-
----
-
-## 🛠️ Tech Stack
-
-- **Framework**: Next.js 14 (App Router)
+- **Framework**: Next.js 15+ with App Router
 - **Language**: TypeScript
-- **Styling**: Tailwind CSS
+- **Styling**: Tailwind CSS v4
+- **UI Components**: Shadcn/ui
+- **Theme**: next-themes with system preference detection
 - **Icons**: Lucide React
-- **Deployment**: Vercel/Netlify Ready
+- **Animations**: Custom CSS animations
 
----
+## Getting Started
 
-## 📂 Struktur Project
+### Prerequisites
 
-```
-yilzi-starterpack-next.js/
-├─ app/
-│   ├─ layout.tsx              # Layout global dengan Navbar & Footer
-│   ├─ page.tsx                # Homepage dengan Hero Section
-│   ├─ about/
-│   │   └─ page.tsx            # Halaman Tentang + Skills
-│   ├─ projects/
-│   │   └─ page.tsx            # Halaman Daftar Project
-│   └─ contact/
-│       └─ page.tsx            # Halaman Kontak + Form
-├─ components/
-│   ├─ yilziNavbar.tsx         # Navigasi responsif
-│   ├─ yilziFooter.tsx         # Footer profesional
-│   └─ yilziProjectCard.tsx    # Komponen card project
-├─ public/
-│   └─ images/                 # Asset gambar project (project1.jpg - project6.jpg)
-├─ styles/
-│   └─ globals.css             # Global styles + Tailwind
-├─ tailwind.config.js          # Konfigurasi Tailwind
-├─ tsconfig.json               # Konfigurasi TypeScript
-└─ package.json                # Dependencies
-```
+- Node.js 18+ or higher
+- npm or yarn package manager
 
----
+### Installation
 
-## 🚀 Cara Instalasi & Menjalankan
+1. Clone the repository:
+\`\`\`bash
+git clone <repository-url>
+cd portfolio
+\`\`\`
 
-### 1. **Clone Repository**
-```bash
-git clone https://github.com/YilziiHCT/yilzi-starterpack-next.js.git
-cd yilzi-starterpack-next.js
-```
-
-### 2. **Install Dependencies**
-```bash
+2. Install dependencies:
+\`\`\`bash
 npm install
-# atau
-yarn install
-# atau
-pnpm install
-```
+\`\`\`
 
-### 3. **Jalankan Development Server**
-```bash
+3. Run the development server:
+\`\`\`bash
 npm run dev
-# atau
-yarn dev
-# atau
-pnpm dev
-```
+\`\`\`
 
-### 4. **Buka Browser**
-Kunjungi `http://localhost:3000` untuk melihat website Anda.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## Project Structure
+
+\`\`\`
+.
+├── app/
+│   ├── layout.tsx           # Root layout with theme provider
+│   ├── page.tsx             # Home page
+│   ├── about/page.tsx       # About page
+│   ├── projects/page.tsx    # Projects page
+│   ├── contact/page.tsx     # Contact page
+│   ├── location/page.tsx    # Location page
+│   ├── social/page.tsx      # Social links page
+│   └── globals.css          # Global styles and animations
+├── components/
+│   ├── navbar.tsx           # Navigation bar with theme toggle
+│   ├── footer.tsx           # Footer component
+│   ├── hero-section.tsx     # Hero section with CTA
+│   ├── tech-stack.tsx       # Tech stack showcase
+│   ├── theme-provider.tsx   # Next-themes wrapper
+│   └── ui/                  # Shadcn/ui components
+├── contexts/
+│   └── language-context.tsx # i18n context with translations
+├── lib/
+│   └── site-config.ts       # Site configuration import
+├── public/
+│   ├── icon-light-32x32.png # Light theme favicon
+│   └── icon-dark-32x32.png  # Dark theme favicon
+└── src/
+    └── config/
+        └── site-config.json # Centralized configuration
+\`\`\`
+
+## Configuration
+
+Edit `src/config/site-config.json` to customize:
+- Personal information
+- Social media links
+- Projects
+- Technology stack
+- Contact information
+
+Example:
+\`\`\`json
+{
+  "personal": {
+    "name": "Yilzi",
+    "title": "Full Stack Developer",
+    "location": "Malang, Indonesia"
+  },
+  "social": [
+    {
+      "name": "GitHub",
+      "url": "https://github.com/yilzi",
+      "icon": "📱"
+    }
+  ],
+  "projects": [
+    {
+      "title": "Project Name",
+      "description": "Project description",
+      "technologies": ["React", "Next.js", "TypeScript"],
+      "featured": true,
+      "demo": "https://demo.com",
+      "source": "https://github.com/..."
+    }
+  ]
+}
+\`\`\`
+
+## Customization
+
+### Changing Colors
+
+Edit the color scheme in `app/globals.css`:
+
+\`\`\`css
+:root {
+  --primary: oklch(0.35 0.15 260);      /* Deep Blue */
+  --secondary: oklch(0.75 0.12 260);    /* Light Blue */
+  --accent: oklch(0.55 0.16 260);       /* Accent Blue */
+}
+\`\`\`
+
+### Adding New Pages
+
+1. Create a new folder in `app/` with a `page.tsx` file
+2. Import Navbar and Footer components
+3. The page will automatically be routed
+
+### Updating Translations
+
+Add new translation keys in `contexts/language-context.tsx`:
+
+\`\`\`typescript
+const translations: Record<Language, Record<string, string>> = {
+  en: {
+    "key.name": "English text"
+  },
+  id: {
+    "key.name": "Indonesian text"
+  }
+}
+\`\`\`
+
+## Deployment
+
+### Deploy to Vercel (Recommended)
+
+1. Push your repository to GitHub
+2. Import the repository in [Vercel](https://vercel.com)
+3. Vercel will automatically detect Next.js and configure the build
+4. Click Deploy
+
+### Deploy to Other Platforms
+
+\`\`\`bash
+npm run build
+npm start
+\`\`\`
+
+The `out` directory contains the production build.
+
+## Environment Variables
+
+No environment variables are required for basic functionality. The site is fully static.
+
+## Performance
+
+- Optimized images with next/image
+- CSS-in-JS with Tailwind CSS
+- Efficient animations using CSS keyframes
+- Code splitting and lazy loading
+- Minified production builds
+
+## Browser Support
+
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+
+## Troubleshooting
+
+### Dark Mode Not Toggling
+
+Ensure `suppressHydrationWarning` is set on the `<html>` tag in `app/layout.tsx`.
+
+### Animations Not Smooth
+
+Check that Tailwind CSS v4 is installed and the animation utilities are properly configured in `globals.css`.
+
+### Theme Not Persisting
+
+The theme preference is stored in localStorage via `next-themes`. Ensure localStorage is enabled in your browser.
+
+## Contributing
+
+Feel free to fork this repository and use it as a template for your own portfolio!
+
+## License
+
+MIT License - feel free to use this project for personal or commercial purposes.
+
+## Contact
+
+- Email: yilzi@example.com
+- GitHub: [@yilzi](https://github.com/yilzi)
+- Twitter: [@yilzi](https://twitter.com/yilzi)
 
 ---
 
-## 🌐 Deployment
-
-### **Deploy ke Vercel** (Recommended)
-1. Push project ke GitHub repository
-2. Kunjungi [vercel.com](https://vercel.com)
-3. Import GitHub repository Anda
-4. Klik **Deploy** - Done! 🎉
-
-### **Deploy ke Netlify**
-1. Build project: `npm run build`
-2. Upload folder `out/` ke Netlify
-3. Atau connect GitHub repository ke Netlify
-
-### **Deploy Manual**
-```bash
-npm run build    # Build project
-npm run start    # Jalankan production server
-```
-
----
-
-## 🎨 Kustomisasi
-
-### **Mengubah Informasi Pribadi**
-Edit file-file berikut:
-- `app/page.tsx` - Hero section & tagline
-- `app/about/page.tsx` - Deskripsi & skills
-- `app/contact/page.tsx` - Informasi kontak
-- `components/yilziFooter.tsx` - Footer info
-
-### **Menambah Project Baru**
-Edit `app/projects/page.tsx` dan tambahkan data project di array `yilziProjects`. Pastikan gambar project sudah ada di folder `public/images/` dengan format `projectX.jpg`.
-
-### **Mengubah Tema Warna**
-Edit `tailwind.config.js` untuk mengubah color palette.
-
----
-
-## 📱 Preview Halaman
-
-### 🏠 **Homepage**
-- Hero section dengan nama besar
-- Tagline profesional
-- Call-to-action buttons
-
-### 👤 **About**
-- Deskripsi singkat tentang diri
-- Skills & teknologi yang dikuasai
-
-### 📂 **Projects**
-- Daftar project dalam bentuk cards
-- Gambar dari local assets (public/images/)
-- Filter berdasarkan kategori
-- Status project (Completed, In Progress, Coming Soon)
-- Link demo dan repository
-
-### 📩 **Contact**
-- Informasi kontak (Email, Telegram, GitHub)
-- Form kontak yang fungsional dengan validasi
-- FAQ section
-
----
-
-## 🎨 Asset Management
-
-### **Gambar Project**
-Letakkan gambar project di folder `public/images/` dengan penamaan:
-- `project1.jpg` - E-Commerce Modern
-- `project2.jpg` - Dashboard Analytics  
-- `project3.jpg` - Blog Platform
-- `project4.jpg` - Task Management App
-- `project5.jpg` - Weather App
-- `project6.jpg` - Restaurant Booking
-
-**Rekomendasi ukuran gambar**: 500x300px atau rasio 5:3 untuk hasil optimal.
-
----
-
-## 📄 Lisensi
-
-```
-====================================================
- 🚀 Project : Yilzi-starterpack-next.js
- 👨‍💻 Author  : Yilzi  
- 📩 Kontak   : Telegram @Yilziii  
- 🌐 GitHub   : YilziiHCT  
-
- ⚠️ Lisensi :
-   - Script ini GRATIS untuk digunakan & dimodifikasi.
-   - ❌ Dilarang keras untuk dijual kembali (resell)
-   - Script hanya untuk pembelajaran & pengembangan pribadi.
-
- © 2025 — Crafted with ❤️ by Yilzi
-====================================================
-```
-
----
-
-## 🤝 Kontribusi
-
-Jika Anda ingin berkontribusi atau melaporkan bug:
-
-1. Fork repository ini
-2. Buat branch baru (`git checkout -b feature/AmazingFeature`)
-3. Commit changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push ke branch (`git push origin feature/AmazingFeature`)
-5. Buat Pull Request
-
----
-
-## 📞 Kontak & Support
-
-- 📩 **Email**: yilzi@example.com
-- 💬 **Telegram**: [@Yilziii](https://t.me/Yilziii)
-- 🐙 **GitHub**: [YilziiHCT](https://github.com/YilziiHCT)
-
----
-
-**Made with ❤️ by Yilzi - Happy Coding! 🚀**
+Built with ❤️ by Yilzi
